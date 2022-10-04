@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Calculator javascript</title>
+<style>
+*{
+text-align:center;
+color:solid black;
+background-color:grey;
+}
+input{
+background-color:yellow;
+width:140px;
+font-size:30px;
+}
+#calculator{
+width:250px;
+background-color:white;
+}
+.box{
+margin-top:100px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<form name="form1">
+<input type="text" id="calculator" name="solution"><br><br>
+<input type="button" value="1" onclick="form1.solution.value+='1'">
+<input type="button" value="2" onclick="form1.solution.value+='2'">
+<input type="button" value="3" onclick="form1.solution.value+='3'">
+<input type="button" value="+" onclick="form1.solution.value+='+'">
+<br><br>
+<input type="button" value="4" onclick="form1.solution.value+='4'">
+<input type="button" value="5" onclick="form1.solution.value+='5'">
+<input type="button" value="6" onclick="form1.solution.value+='6'">
+<input type="button" value="-" onclick="form1.solution.value+='-'">
+<br><br>
+<input type="button" value="7" onclick="form1.solution.value+='7'">
+<input type="button" value="8" onclick="form1.solution.value+='8'">
+<input type="button" value="9" onclick="form1.solution.value+='9'">
+<input type="button" value="*" onclick="form1.solution.value+='*'">
+<br><br>
+<input type="button" value="%" onclick="form1.solution.value+='%'">
+<input type="button" value="0" onclick="form1.solution.value+='0'">
+<input type="button" value="." onclick="form1.solution.value+='.'">
+<input type="button" value="/" onclick="form1.solution.value+='/'">
+<br><br>
+<input type="button" value="Clear All" onclick="form.solution.value=''" id="clr">
+<input type="button" value="=" onclick="form1.solution.value=eval(form1.solution.value)">
+<br><br>
+<h2 style="margin-top:50px;letter-spacing:2px";><b>Calculator Program in Javascript,HTML,Css<b></h2>
+</form>
+</div>
+</body>
+</html>
